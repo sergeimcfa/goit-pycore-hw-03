@@ -8,15 +8,6 @@ import re
 
 
 def normalize_phone(phone_number):
-    """
-    Нормалізує телефонний номер до стандартного формату.
-
-    Аргументи:
-        phone_number (str): Номер телефону у довільному форматі.
-
-    Повертає:
-        str: Нормалізований номер у форматі '+XXXXXXXXXXXX'
-    """
 
     # Видаляємо всі символи, крім цифр і '+'
     cleaned_number = re.sub(r"[^\d+]", "", phone_number.strip())
