@@ -20,3 +20,15 @@ def get_numbers_ticket(min, max, quantity):
 
     # Повертаємо відсортований список
     return sorted(numbers)
+
+
+# -----------------------------
+# Приклади виконання
+# -----------------------------
+if __name__ == "__main__":
+    lottery_numbers = get_numbers_ticket(1, 49, 6)
+    print("Ваші лотерейні числа:", lottery_numbers)
+
+    print(get_numbers_ticket(10, 20, 5))
+    print(get_numbers_ticket(1, 10, 15))  # Некоректно — поверне []
+    print(get_numbers_ticket(0, 50, 6))   # Некоректно — поверне []
